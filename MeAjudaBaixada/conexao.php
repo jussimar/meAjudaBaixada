@@ -139,10 +139,40 @@
         }
 	}
     
-    function ListarPedido($cd_pedido){
+    function ListarPedido($cd_pedido, $id_solicitante, $id_categoria, $id_parceiro, $id_doador){
 		$sql = "SELECT * FROM tb_pedido";
     	if($cd_pedido > 0){
             $sql.= " WHERE cd_pedido = {$cd_pedido}";
+        }
+        else if($id_solicitante > 0){
+            $sql .= " WHERE id_solicitante = {$id_solicitante}";
+        }
+        else if($id_categoria > 0){
+            $sql .= " WHERE id_categoria = {$id_categoria}";
+            // Se foi selecionada uma categoria,
+            if(sizeof($id_categoria) == 1){
+                // mostre o id dela.
+                $sql .= "= {$id_categoria}";
+            // Se não, há mais do que uma categoria;
+            } else {
+                // Usa-se o comando IN;
+                $sql .= "IN(";
+                // Para cada categoria selecionada;
+                for($i = 0; $i < sizeof($id_categoria); $i++){
+                    // Juntá-las separando por virgula;
+                    $sql .= "{$id_categoria[$i]},";
+                }
+                // Tirar a ultima virgula;
+                $sql = substr($sql, 0, -1);
+                // E fechar parenteses.
+                $sql .= ")";
+            }
+        }
+        else if($id_parceiro > 0){
+            $sql .= " WHERE id_parceiro = {$id_parceiro}";
+        }
+        else if($id_doador > 0){
+            $sql .= " WHERE id_doador = {$id_doador}";
         }
         $resultado = $GLOBALS['conexao']->query($sql);
         return $resultado;
@@ -179,10 +209,13 @@
         }
 	}
     
-    function ListarSolicitante($cd_solicitante){
+    function ListarSolicitante($cd_solicitante, $id_amigo){
 		$sql = "SELECT * FROM tb_solicitante";
 		if($cd_solicitante > 0){
             $sql.= " WHERE cd_solicitante = {$cd_solicitante}";
+        }
+        else if($id_amigo > 0){
+            $sql.= " WHERE id_amigo = {$id_amigo}";
         }
         $resultado = $GLOBALS['conexao']->query($sql);
         return $resultado;
@@ -259,10 +292,13 @@
         }
 	}
     
-    function ListarDependente($cd_dependente){
+    function ListarDependente($cd_dependente, $id_solicitante){
 		$sql = "SELECT * FROM tb_dependente";
 		if($cd_dependente > 0){
             $sql.= " WHERE cd_dependente = {$cd_dependente}";
+        }
+        else if($id_solicitante > 0){
+            $sql.= " WHERE id_solicitante = {$id_solicitante}";
         }
         $resultado = $GLOBALS['conexao']->query($sql);
         return $resultado;
