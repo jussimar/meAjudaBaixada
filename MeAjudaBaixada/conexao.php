@@ -148,7 +148,7 @@
             $sql .= " WHERE id_solicitante = {$id_solicitante}";
         }
         else if($id_categoria > 0){
-            $sql .= " WHERE id_categoria = {$id_categoria}";
+            $sql .= " WHERE id_categoria = ";
             // Se foi selecionada uma categoria,
             if(sizeof($id_categoria) == 1){
                 // mostre o id dela.
