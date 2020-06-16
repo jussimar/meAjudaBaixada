@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Criar pedido - Me Ajuda Baixada</title>
+  <link rel="icon" href="img/icon.png" type="icon2/png">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body style="background-color: #e9e6ff;">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-10 offset-md-1">
+        <section style="background-color: white; padding-bottom: auto;">
+          <br>
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <a href="index.html"><img title="Voltar a página inicial" class="img-fluid" style="width: 10%;" src="img/icon.png"></a>
+            </div>
+          </div>
+          <br><br>
+          <div class="row">
+            <div class="col-md-6 offset-md-3 text-center">
+              <form>
+                <input placeholder="Nome do solicitante" class="border-purple rounded form-control" type="text" name="nm_solicitante" required>
+                <br>
+                <input placeholder="CPF do solicitante" class="form-control border-purple rounded" type="text" name="cd_cpf" required>
+                <br>
+                <input class="border-purple rounded form-control" type="date" name="dt_nasc_solicitante" required>
+                <br>
+                <input placeholder="Telefone ou celular do solicitante para contato" class="border-purple rounded form-control" type="text" name="cd_fone_contato_solicitante" required>
+                <hr>
+                <input placeholder="Endereço do solicitante" class="border-purple rounded form-control" type="text" name="nm_endereco_solicitante" required>
+                <br>
+                <input placeholder="Bairro do solicitante" class="border-purple rounded form-control" type="text" name="nm_bairro_solicitante" required>
+                <br>
+                <input placeholder="Cidade do solicitante" class="border-purple rounded form-control" type="text" name="nm_cidade_solicitante" required>
+                <hr>
+                Adicione dependentes
+                <i id="mais" class="btn btn-success plus">+</i>
+                <i id="menos" class="btn btn-danger minus">-</i>
+                <br><br>
+                <span id="dependentesss">
+                  
+                  
+                </span>
+                <hr>
+                <select class="form-control border-purple">
+                  <option selected>Escolha uma categoria</option>
+                  <option value="1">Alimento</option>
+                  <option value="2">Vestimenta</option>
+                  <option value="3">Remedios</option>
+                  <option value="4">Comida</option>
+                </select>
+                <br>
+                <textarea class="form-control border-purple" placeholder="Descrição do pedido"></textarea>
+                <br>
+                <select class="form-control border-purple">
+                  <option selected>Instituição de entrega</option>
+                  <option value="1">ETEC de Itanhaém</option>
+                </select>
+                <br>
+                <button class="btn bg-purple text-white" type="submit"><b>Enviar</b></button>
+                <a href="pagina_usuario.html"><button type="button" class="text-white btn bg-purple"><b>Cancelar</b></button></a>
+              </form>
+              <br>
+            </div>
+          </div>
+            
+        </section>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modalTabela" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Ajude [Nome]</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body text-left">
+              <h6 style="all: unset;"><b>Nome:</b> Lorem ipsum dolor sit amet</h6>
+              <br><br>
+              <h6 style="all: unset;"><b>Data do pedido:</b> dd/mm/aaaa</h6>
+              <br><br>
+              <h6 style="all: unset;"><b>Categoria:</b> Categoria 1</h6>
+              <br><br>
+              <h6 style="all: unset;"><b>Descrição do pedido:</b> Vestibulum placerat diam in velit rutrum, et dignissim nibh convallis. Integer imperdiet, lectus at sodales semper, lectus dui sagittis mauris, quis placerat felis est vitae risus.</h6>
+              <br><br>
+              <h6 style="all: unset;"><b>Local:</b> Rua Aliquam vitae eros in massa convallis tincidunt Numero 123</h6>
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-white border border-dark">Ajudar esta pessoa</button>
+            </div>
+          </div>
+        </div>
+      </div>
+  <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/acao.js"></script>
+</body>
+</html>
