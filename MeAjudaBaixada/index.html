@@ -86,7 +86,7 @@
             </ul>
 
             <div class="nav-right text-center text-lg-right py-4 py-lg-0" >
-              <a class="pl-4 pr-4 text-white bg-info btn rounded-pill border" data-toggle="modal" data-target="#modalLogin" href="#"><b>Login</b></a>
+              <a class="pl-4 pr-4 text-white bg-azul btn rounded-pill border" data-toggle="modal" data-target="#modalLogin" href="#"><b>Login</b></a>
 
               <div class="modal fade" id="modalLogin" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
               <div class="modal-dialog">
@@ -99,13 +99,13 @@
                   </div>
                   <div class="modal-body">
                     <form>
-                      <input class="form-control border-info" placeholder="E-mail" type="email" name="emailLogin" required><br>
+                      <input class="form-control border-verde" placeholder="E-mail" type="email" name="emailLogin" required><br>
                       
-                      <input placeholder="Senha" class="form-control border-info" type="password" name="senhaLogin" required><br>
+                      <input placeholder="Senha" class="form-control border-verde" type="password" name="senhaLogin" required><br>
                       
                       
                     </form>
-                    <h6 class="text-right"><a href="pagina_usuario.html"><button type="submit" class="pl-4 pr-4 text-white bg-info btn rounded-pill border">Entrar</button></a></h6>
+                    <h6 class="text-right"><a href="pagina_usuario.html"><button type="submit" class="pl-4 pr-4 text-white bg-azul btn rounded-pill">Entrar</button></a></h6>
                   </div>
                 </div>
               </div>
@@ -124,23 +124,23 @@
 
   <!--<section style="background-color: #e9e6ff;">-->
 
-    <div class="container-fluid" style="background-color: #00cc44;">
+    <div class="container-fluid" style="background-color: #d5f6e0;">
       <br><br>
-      <div class="row" >
+      <div class="row">
         
           
           <!--<div class="row">-->
             <div class="col-md-4 text-center">
-              <h6 class="pl-4 pr-4 text-white bg-info btn rounded-pill border" data-toggle="collapse" data-target="#CollapsePA">Quero ajudar</h6>
+              <h6 class="pl-4 pr-4 text-white btn rounded-pill bg-azul" data-toggle="collapse" data-target="#CollapsePA">Quero ajudar</h6>
             </div>
 
             
 
             <div class="col-md-4 text-center">
-              <h6 style="padding-left: 10%; padding-right: 10%;" class="text-white bg-info btn rounded-pill border" data-toggle="collapse" data-target="#CollapseParceiro">Desejo ser parceiro</h6>
+              <h6 style="padding-left: 10%; padding-right: 10%;" class="text-white btn rounded-pill bg-verde" data-toggle="collapse" data-target="#CollapseParceiro">Desejo ser parceiro</h6>
             </div>
             <div class="col-md-4 text-center">
-              <h6 class="pl-4 pr-4 text-white bg-info btn rounded-pill border" data-toggle="collapse" data-target="#CollapseQA">Preciso de ajuda</h6>
+              <h6 class="pl-4 pr-4 text-white btn rounded-pill bg-azul" data-toggle="collapse" data-target="#CollapseQA">Preciso de ajuda</h6>
             </div>
           <!--</div>-->
           
@@ -149,8 +149,8 @@
        <div class="row text-center">
             <div class="col-md-4">
               <div class="collapse" id="CollapsePA">
-          <div class="card bg-light mb-3">
-            <div class="card-header"><h5><b>Veja quem precisa de ajuda</b></h5></div>
+          <div style="background-color: #ccecff;" class="card mb-3">
+            <div style="color: #0091e6;" class="card-header"><h5><b>Veja quem precisa de ajuda</b></h5></div>
             <div class="card-body">
               <p data-toggle="modal" data-target="#ModalAC">Deseja ajudar um conhecido? Faça <a data-toggle="modal" data-target="#modalLogin"><u>login</u></a> ou <a data-toggle="modal" data-target="#ModalCadastrar"><u>cadastre-se</u></a></p>
               
@@ -190,7 +190,7 @@
                 </select>
               </form>
               <br>
-              <table id="tabela" class="table">
+              <table id="tabela" class="table table-borderless bg-white">
                 <thead>
                   <tr>
                     <th>Nomes</th>
@@ -255,19 +255,19 @@
             </div>
             <div class="col-md-4">
               <div class="collapse" id="CollapseParceiro">
-          <div class="card bg-light mb-3">
-            <div class="card-header"><h5><b>Cadastre-se</b></h5></div>
+          <div style="background-color: #c1f1d0;" class="card mb-3">
+            <div class="card-header text-verde"><h5><b>Cadastre-se</b></h5></div>
             <div class="card-body">
               <form>
-                <input placeholder="Nome" class="form-control border-info rounded" type="text" name="nm_parceiro" required>
+                <input placeholder="Nome" class="form-control border-verde rounded" type="text" name="nm_parceiro" required>
                 <br>
-                <textarea class="form-control border-info rounded" name="ds_parceiro" placeholder="Descrição" required></textarea>
+                <textarea class="form-control border-verde rounded" name="ds_parceiro" placeholder="Descrição" required></textarea>
                 <br>
                 
                 
-                <input placeholder="E-mail" class="border-info rounded form-control" type="email" name="nm_email_parceiro" required>
+                <input placeholder="E-mail" class="border-verde rounded form-control" type="email" name="nm_email_parceiro" required>
                 <br>
-                <input placeholder="Telefone ou celular para contato" class="border-info rounded form-control" type="text" name="cd_fone_contato_parceiro" required>
+                <input placeholder="Telefone ou celular para contato" class="border-verde rounded form-control" type="text" name="cd_fone_contato_parceiro" required>
                 <br>
                 <div class="input-group mb-3">
                   <div class="custom-file">
@@ -276,13 +276,13 @@
                   </div>
                 </div>
                 <hr>
-                <input placeholder="Endereço" class="border-info rounded form-control" type="text" name="nm_endereco_parceiro" required>
+                <input placeholder="Endereço" class="border-verde rounded form-control" type="text" name="nm_endereco_parceiro" required>
                 <br>
-                <input placeholder="Ponto de referencia" class="border-info rounded form-control" type="text" name="nm_ponto_referencia" required>
+                <input placeholder="Ponto de referencia" class="border-verde rounded form-control" type="text" name="nm_ponto_referencia" required>
                 <br>
-                <input placeholder="Bairro" class="border-info rounded form-control" type="text" name="nm_bairro_parceiro" required>
+                <input placeholder="Bairro" class="border-verde rounded form-control" type="text" name="nm_bairro_parceiro" required>
                 <br>
-                <input placeholder="Cidade" class="border-info rounded form-control" type="text" name="nm_cidade_parceiro" required>
+                <input placeholder="Cidade" class="border-verde rounded form-control" type="text" name="nm_cidade_parceiro" required>
                 <hr>
 
                 <div class="row">
@@ -290,7 +290,7 @@
                     <h6 class="text-left"><button class="btn btn-white border-purple"><a href="#" class="text-decoration-none text-dark">Fazer login</a></button></h6>
                   </div>-->
                   <div class="col-md-12">
-                    <h6 class="text-right"><button class="pl-4 pr-4 text-white bg-info btn rounded-pill border">Cadastrar</button></h6>
+                    <h6 class="text-right"><button class="pl-4 pr-4 text-white btn rounded-pill bg-azul">Cadastrar</button></h6>
                   </div>
                 </div>
               </form>
@@ -300,37 +300,37 @@
             </div>
             <div class="col-md-4">
                <div class="collapse" id="CollapseQA">
-          <div class="card bg-light mb-3">
-            <div class="card-header"><h5><b>Cadastre-se ou faça login</b></h5></div>
+          <div style="background-color: #ccecff;" class="card mb-3">
+            <div style="color: #0091e6;" class="card-header"><h5><b>Cadastre-se ou faça login</b></h5></div>
             <div class="card-body">
 
               <form>
-                <input placeholder="Nome" class="border-info rounded form-control" type="text" name="nm_solicitante" required>
+                <input placeholder="Nome" class="border-azul rounded form-control" type="text" name="nm_solicitante" required>
                 <br>
-                <input placeholder="CPF" class="form-control border-info rounded" type="text" name="cd_cpf" required>
+                <input placeholder="CPF" class="form-control border-azul rounded" type="text" name="cd_cpf" required>
                 <br>
-                <input placeholder="Data de nascimento" class="border-info rounded form-control" type="date" name="dt_nasc_solicitante" required>
+                <input placeholder="Data de nascimento" class="border-azul rounded form-control" type="date" name="dt_nasc_solicitante" required>
                 <br>
-                <input placeholder="Telefone ou celular para contato" class="border-info rounded form-control" type="text" name="cd_fone_contato_solicitante" required>
+                <input placeholder="Telefone ou celular para contato" class="border-azul rounded form-control" type="text" name="cd_fone_contato_solicitante" required>
                 <hr>
-                <input placeholder="Endereço" class="border-info rounded form-control" type="text" name="nm_endereco_solicitante" required>
+                <input placeholder="Endereço" class="border-azul rounded form-control" type="text" name="nm_endereco_solicitante" required>
                 <br>
-                <input placeholder="Bairro" class="border-info rounded form-control" type="text" name="nm_bairro_solicitante" required>
+                <input placeholder="Bairro" class="border-azul rounded form-control" type="text" name="nm_bairro_solicitante" required>
                 <br>
-                <input placeholder="Cidade" class="border-info rounded form-control" type="text" name="nm_cidade_solicitante" required>
+                <input placeholder="Cidade" class="border-azul rounded form-control" type="text" name="nm_cidade_solicitante" required>
                 <hr>
                 
-                <input placeholder="Senha" class="border-info rounded form-control" type="password" name="cd_senha_solicitante" required>
+                <input placeholder="Senha" class="border-azul rounded form-control" type="password" name="cd_senha_solicitante" required>
                 <br>
-                <input placeholder="E-mail" class="border-info rounded form-control" type="email" name="nm_e-mail_solicitante" required>
+                <input placeholder="E-mail" class="border-azul rounded form-control" type="email" name="nm_e-mail_solicitante" required>
                 <hr>
 
                 <div class="row">
                   <div class="col-md-6">
-                    <h6 class="text-left"><button class="pl-4 pr-4 text-white bg-info btn rounded-pill border" data-toggle="modal" data-target="#modalLogin">Fazer login</button></h6>
+                    <h6 class="text-left"><button class="pl-4 pr-4 text-white bg-azul btn rounded-pill" data-toggle="modal" data-target="#modalLogin">Fazer login</button></h6>
                   </div>
                   <div class="col-md-6">
-                    <h6 class="text-right"><button type="submit" class="pl-4 pr-4 text-white bg-info btn rounded-pill border">Cadastrar</button></h6>
+                    <h6 class="text-right"><button type="submit" class="pl-4 pr-4 text-white bg-azul btn rounded-pill">Cadastrar</button></h6>
                   </div>
                 </div>
               </form>
@@ -351,8 +351,8 @@
       <!--<div class="section-intro text-center pb-90px" style="color: black;">-->
         <div class="row">
           <div class="col-md-6">
-            <h2 class="text-center" id="sobre-nos">Sobre nós</h2>
-            <hr class="bg-info">
+            <h2 class="text-center text-azul" id="sobre-nos">Sobre nós</h2>
+            <hr class="bg-verde">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed orci at enim sodales sagittis. Maecenas mollis semper finibus. Maecenas fringilla posuere ante imperdiet hendrerit. Proin lacus nisi, vehicula eu semper ut, posuere in enim. Morbi vel facilisis nulla, sit amet dapibus ante. Pellentesque a mauris a enim convallis posuere a vel est. Mauris tincidunt diam pulvinar tellus viverra tempus. Etiam finibus nunc non purus eleifend, molestie mattis nulla dapibus. Praesent dictum odio quam, eget placerat nibh volutpat sodales. Phasellus vitae arcu ac orci scelerisque convallis. Vestibulum convallis arcu quis porta tincidunt. Ut vitae eros nec dui iaculis sagittis sit amet quis quam.<br><br>Curabitur suscipit aliquam lorem ac convallis. Morbi imperdiet dolor mi, at fermentum risus tristique eu. Nunc id elementum risus. Donec viverra vulputate est, sit amet feugiat turpis finibus ut. Maecenas sapien tortor, aliquet vitae diam eget, eleifend suscipit leo. Fusce dictum egestas leo, vitae malesuada diam porttitor eget. Curabitur elementum turpis lectus, vel dapibus tellus pulvinar et. Vestibulum suscipit quam vel purus vestibulum pharetra. Ut id velit metus. Curabitur lorem ligula, fermentum a diam porttitor, tempor ullamcorper ex. Donec bibendum malesuada massa, sit amet sodales nibh convallis at. Sed luctus sem a eros ullamcorper, a viverra metus tempus. Quisque non auctor mauris. Vivamus ligula arcu, eleifend sed lectus sed, sagittis molestie elit.<br><br>Nunc nibh nibh, tempus sed eleifend at, tincidunt vel lorem. Quisque auctor magna non rhoncus laoreet. Proin arcu enim, scelerisque id orci non, pharetra tempor felis. Nunc eget imperdiet erat. Morbi feugiat nulla sed fringilla efficitur. Morbi imperdiet purus vel est lobortis tincidunt. Vestibulum fringilla augue id commodo scelerisque. Nunc tempor vulputate imperdiet. Quisque dapibus est nulla, in congue nisi interdum ut. Donec ac metus aliquet ligula lobortis commodo ut id urna. Cras cursus gravida neque, sit amet feugiat dui ullamcorper ut. Morbi dapibus consequat tellus sed finibus. Nullam nisl ex, dignissim a erat ac, euismod dapibus est.</p>
           </div>
           
@@ -368,32 +368,32 @@
       
     <!--</div>-->
   <!--</section>-->
-
+<br>
   <section class="section-padding">
     <div class="container-fluid">
       <div class="row">
 
 
               <div class="col-md-2 text-center"><a target="_blank" href="http://www.etecitanhaem.com.br/"><img src="img/logo_etec_itanhaem.png"></a></div>
-              <div class="col-md-2 text-center"><img class="border border-info" style="padding: 10%;" src="#" alt="Logo Apoiador 2"></div>
-              <div class="col-md-2 text-center"><img class="border border-info" style="padding: 10%;" src="#" alt="Logo Apoiador 3"></div>
-              <div class="col-md-2 text-center"><img class="border border-info" style="padding: 10%;" src="#" alt="Logo Apoiador 4"></div>
-              <div class="col-md-2 text-center"><img class="border border-info" style="padding: 10%;" src="#" alt="Logo Apoiador 5"></div>
-              <div class="col-md-2 text-center"><img class="border border-info" style="padding: 10%;" src="#" alt="Logo Apoiador 6"></div>
+              <div class="col-md-2 text-center"><img class="border border-dark" style="padding: 10%;" src="#" alt="Logo Apoiador 2"></div>
+              <div class="col-md-2 text-center"><img class="border border-dark" style="padding: 10%;" src="#" alt="Logo Apoiador 3"></div>
+              <div class="col-md-2 text-center"><img class="border border-dark" style="padding: 10%;" src="#" alt="Logo Apoiador 4"></div>
+              <div class="col-md-2 text-center"><img class="border border-dark" style="padding: 10%;" src="#" alt="Logo Apoiador 5"></div>
+              <div class="col-md-2 text-center"><img class="border border-dark" style="padding: 10%;" src="#" alt="Logo Apoiador 6"></div>
 
             <br>
 
       </div>
 
 </section>
-  <footer style="background-color: #00cc44;" class="text-center">
+<br>
+  <footer class="text-center" style="background-color: #d5f6e0;">
     <br><br>
     <a target="_blank" class="text-decoration-none" href="https://github.com/jussimar/meAjudaBaixada">
-      <h6 style="color: #38b6ff;">Feito com ❤ por alunos da ETEC de Itanhaém</h6>
+      <h6 style="color: #0091e6;"><b>Feito com ❤ por alunos da ETEC de Itanhaém</b></h6>
     </a>
     <br><br>
   </footer>
-
   <script src="js/jquery-3.5.1.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/acao.js"></script>

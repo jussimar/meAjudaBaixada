@@ -1,4 +1,8 @@
-
+/*
+  verde claro footer -> #d5f6e0
+  azul escuro footer -> #0091e6
+  verde escuro form parceiro -> #c1f1d0
+*/
 
 @import url("https://fonts.googleapis.com/css?family=Roboto+Condensed:700");
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,500");
@@ -11,9 +15,13 @@ body {
   line-height: 1.667;
 }
 
-.border-purple {
-  border-color: #ccffcc
-;
+.border-azul {
+  border-color: #38b6ff;
+  border-width: 2px;
+}
+
+.border-verde {
+  border-color: #2abb57;
   border-width: 2px;
 }
 
@@ -21,12 +29,21 @@ body {
   all: inherit;
 }
 
-.bg-purple {
-  background-color: # #ccffcc
-;
+.bg-azul {
+  background-color: #38b6ff;
 }
 
+.bg-verde {
+  background-color: #2abb57;
+}
 
+.text-azul {
+  color: #38b6ff;
+}
+
+.text-verde {
+  color: #2abb57;
+}
 
 
 /*ME AJUDA BAIXADA*/
