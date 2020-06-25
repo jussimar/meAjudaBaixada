@@ -1,0 +1,180 @@
+
+
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed:700");
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500");
+
+body {
+  color: black;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.667;
+}
+
+.border-purple {
+  border-color: #ccffcc
+;
+  border-width: 2px;
+}
+
+#slogan {
+  all: inherit;
+}
+
+.bg-purple {
+  background-color: # #ccffcc
+;
+}
+
+
+
+
+/*ME AJUDA BAIXADA*/
+h1,
+h6 {
+  font-family: "Roboto Condensed", sans-serif;
+  color: black;
+  line-height: 1.25;
+}
+
+h1,
+.h1 {
+  font-size: 50px;
+}
+
+.bg-gray {
+  background-color: #f8f8ff;
+}
+
+.section-margin {
+  margin: 65px 0;
+}
+
+
+
+
+/*ESTILO DO SITE */
+
+.header_area {
+  /*position: absolute;*/
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+  transition: background 0.4s, all 0.3s linear;
+}
+
+
+.header_area .navbar-social li a:hover i, .header_area .navbar-social li span {
+  color: black;
+}
+
+.header_area .menu_nav {
+  width: 100%;
+}
+
+
+
+/*MENU*/
+.header_area .navbar .nav-right {
+  min-width: 260px;
+}
+
+.header_area .navbar .nav .nav-item {
+  margin-right: 35px;
+}
+
+
+.header_area .navbar .nav .nav-item .nav-link {
+  font-family: "Roboto", sans-serif;
+  color: #38b6ff;
+  /*text-transform: capitalize;*/
+  font-weight: 500;
+  padding: 33px 0;
+  display: inline-block;
+}
+
+.header_area .navbar .nav .nav-item .nav-link:after {
+  display: none;
+}
+
+.header_area .navbar .nav .nav-item:hover .nav-link, .header_area .navbar .nav .nav-item.active .nav-link {
+  color: #2abb57;
+  opacity: 1;
+}
+
+
+
+/*PARCEIROS*/
+  .header_area .navbar .nav .nav-item.submenu ul {
+    /*position: absolute;*/
+    top: 120%;
+    left: 0px;
+    min-width: 200px;
+    text-align: left;
+    opacity: 0;
+    transition: all 300ms ease-in;
+    visibility: hidden;
+    display: block;
+    border: none;
+    padding: 0px;
+    border-radius: 0px;
+    box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.4);
+  }
+}
+
+.header_area .navbar .nav .nav-item.submenu ul:before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 10px 0 10px;
+  border-color: #eeeeee transparent transparent transparent;
+  /*position: absolute;*/
+  right: 24px;
+  top: 45px;
+  z-index: 3;
+  opacity: 0;
+  transition: all 400ms linear;
+}
+
+
+/*SUBMENU PARCEIROS*/
+.header_area .navbar .nav .nav-item.submenu ul .nav-item {
+  display: block;
+  float: none;
+  margin-right: 0px;
+  border-bottom: 1px solid #00cc44;
+  margin-left: 0px;
+  transition: all 0.4s linear;
+}
+
+.header_area .navbar .nav .nav-item.submenu ul .nav-item .nav-link {
+  line-height: 45px;
+  color: #38b6ff !important;
+  padding: 0px 30px;
+  transition: all 150ms linear;
+  display: block;
+  margin-right: 0px;
+}
+
+.header_area .navbar .nav .nav-item.submenu ul .nav-item:last-child {
+  border-bottom: none;
+}
+
+.header_area .navbar .nav .nav-item.submenu ul .nav-item:hover .nav-link {
+  background-color: #4da6ff;
+  color: #fff !important;
+}
+
+.header_area .navbar .nav .nav-item.submenu:hover ul {
+    visibility: visible;
+    opacity: 1;
+    top: 100%;
+  }
+}
+ 
+
+
+
+
